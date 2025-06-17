@@ -171,20 +171,8 @@ If you have installed our virtual machine, then congratulations - you can alread
 <details>
 <summary><strong>Drivers & Tools</strong></summary>
 
-* Skip this if you used our preinstalled VM  
-* Otherwise, install:
 
-1. **Microsoft Visual C++ 2013 (x64 or x86)**  
-2. **WinPcap**  
-   - ⚠️ Must uninstall any **Npcap** version first  
-3. **Madrix 3**  
-   - Request from [sales@etereshop.com](mailto:sales@etereshop.com)  
-4. **Effects Recorder**  
-   - Just unzip and run
-
-<!-- IMAGE PLACEHOLDER: msinfo32 system check -->
-
-🎥 [Video Tutorial](https://www.youtube.com/watch?v=dO-x0v_YKjU)
+ [Video Tutorial](https://www.youtube.com/watch?v=dO-x0v_YKjU)
 
 </details>
 
@@ -195,12 +183,6 @@ If you have installed our virtual machine, then congratulations - you can alread
 <details>
 <summary><strong>Open Your Project File</strong></summary>
 
-* After your order, you receive an `.msz` Madrix file  
-* Open via:
-  - Double-click `.msz`  
-  - OR Madrix → File → Open Setup
-
-📧 Missing your file? Contact [sales@etereshop.com](mailto:sales@etereshop.com)
 
 <!-- IMAGE PLACEHOLDER: Madrix project screen -->
 
