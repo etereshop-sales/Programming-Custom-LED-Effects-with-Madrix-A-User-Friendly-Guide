@@ -32,57 +32,136 @@ Madrix 3 runs on **Windows 10** (or earlier), and it is not supported on Mac OS 
 <details>
 <summary><strong>VirtualBox (Windows / macOS)</strong></summary>
 
-* Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)  
-* Recommended specs:
-  * 8GB RAM
-  * 32GB free disk space (preferably SSD)
+**We have a prepared Windows 10 image for you and we recommend using it. If desired, you can build the virtual machine image that you want to use yourself, but do this only if you already know how to work with virtual machines.**
 
-* Steps:
-  1. Download our prebuilt Windows 10 `.ova` image
-  2. Open VirtualBox → Import Appliance
-  3. Load `.ova` file and finish import
-  4. Launch the VM
+If you are a Windows user, then we have 2 options for you to install a virtual machine: 1) Using a third-party VirtualBox 2) Using the built-in Hyper-V
+The difference is that Hyper-V is a virtualization system built into Windows, which works better than VirtualBox in this case. Therefore, we recommend this method, but it may seem more complicated to you. However, if you encounter any problems with it, then you can always return to the VirtualBox option.
+If you are a **macOS** user, then only the method using VirtualBox is suitable for you.
 
-<!-- IMAGE PLACEHOLDER: VirtualBox import screen -->
+**Important: the virtual machine may lag a lot when it is first started. In this case, after logging into the user’s account, let Windows work for a while so that it makes all the necessary changes. This can take from 20-30 minutes to 1-2 hours, depending on the performance of your system. Most often, slowdowns are caused by installing the system on the HDD. If possible, install the virtual machines on an SSD drive.**
 
-> ⏳ First boot may be slow due to system updates (especially on HDDs).
+**1. Installing VirtualBox**
 
-</details>
+Download [VirtualBox](https://www.virtualbox.org/wiki/Downloads) from the official website and install it on your PC. 
 
-<details>
-<summary><strong>Hyper-V (Windows only)</strong></summary>
+![unnamed](images/1.png)
 
-* Open **Turn Windows Features On or Off**  
-* Enable **Hyper-V**, click OK, restart PC
+**2. Creating a virtual machine**
 
-* If Hyper-V is missing (common on Windows Home), run `hyperv.bat` as Administrator.
+> The user’s password is “etereshop”
 
-* Steps:
-  1. Download `.vmcz` file
-  2. Double-click → Import Virtual Machine
-  3. Launch the VM
-
-<!-- IMAGE PLACEHOLDER: Hyper-V import screen -->
-
-> 🗝️ Default VM password: `etereshop`  
-> 🎥 [Video Tutorial](https://www.youtube.com/watch?v=iJGeNG-NsPo)
+Steps:
+1. Download the Windows.ova file (this is an archived virtual machine image)
+2. Launch VirtualBox, click Import
+3. Select the downloaded file Windows.ova
+4. Select the appropriate settings and wait for the import to complete
+   
+We also have a video tutorial on installing and configuring this virtual machine.
+[![Watch the tutorial on YouTube](https://img.youtube.com/vi/iJGeNG-NsPo/hqdefault.jpg)](https://youtu.be/iJGeNG-NsPo)
 
 </details>
 
 <details>
-<summary><strong>Tips & Troubleshooting</strong></summary>
+<summary><strong> An alternative way for Windows users: Hyper-V</strong></summary>
 
-* Configure RAM & CPU via: `VM → Settings → Memory / Processor`  
-* To share drives:  
-  - Connect → Show Options → Local Resources → Drives  
-  - Choose USB or system drives
+** Enabling the Hyper-V component**
+   
+Hyper-V is a built-in component of Windows, i.e. you do not need to install any software to run a virtual machine, but you may need the Internet so that Windows can get the necessary files. To enable this component, you need to do the following: 
+1. Search for Turn Windows features on or off
+2. Check the Hyper-V component
+3. Click OK, wait for the changes to be made and restart the computer
 
-* Common issues:
-  - Reduce VM RAM if total system memory is ≤ 8GB
-  - Avoid running heavy apps in background while VM is active
+![unnamed](images/2.png)
 
-<!-- IMAGE PLACEHOLDER: Hyper-V settings screen -->
+If you **do not see the Hyper-V** component in the list (most likely you are a Windows Home distribution user), then you can install it using a special file: hyperv.bat To do this, follow these steps: 1. Download the file 2. Run it as an administrator: select the file, right-click, select run as an administrator. 3. Wait for the installation to finish. 4. At the end, you will be prompted to restart your computer, you can type “y” or “n” **without quotes** and press enter. However, a reboot is necessary in any case to make changes.
 
+After this step, the **Hyper-V** Manager application will appear on your system - with it you will be able to manage your virtual machines.
+
+**Creating a virtual machine**
+
+1. Download the [Madrix.vmcz](https://drive.google.com/file/d/1Oc9T0QdLcCz-ylFizRLqyfM9VQiR-m5G/view?pli=1) file (this is an archived virtual machine image)
+2. Double-click on the downloaded file
+3. Click “Import Virtual Machine”
+4. Wait for the import to finish (It may take some time.)
+5. You can run your virtual machine
+
+![unnamed](images/3.png)
+
+</details>
+
+<details>
+<summary><strong>How to set up and launch</strong></summary>
+
+**How to set up**
+
+First, you can change the installation paths of virtual machines if you have several disks and you do not want to install a virtual machine on the system disk (this is the default path). To do this, do the following:
+
+1. Open Hyper-V Manager
+2. Right-click on the name of your computer:
+
+![unnamed](images/4.png)
+
+3. Select a location for storing virtual machine disks (you don’t need to change the other paths)
+
+![unnamed](images/5.png)
+
+> Warning! Check the presence of this check mark in the Hyper-V Manager settings 
+
+![unnamed](images/6.png)
+
+After importing the virtual machine, it will appear in the central window of the **Hyper-V** Manager program. To open this list, left-click on the name of your computer in the list on the left. The settings of the virtual machine are opened by right-clicking on it and clicking on the Settings item.
+
+![unnamed](images/7.png)
+
+> You can change the settings of a virtual machine only when it is turned off
+
+On the **Memory ta**b, you can configure the amount of RAM available for the virtual machine:
+
+![unnamed](images/8.png)
+
+On the **Processor tab**, you can configure the number of available processor cores for a virtual machine
+
+![unnamed](images/9.png)
+
+Check that the **Enable checkpoints** checkbox is disabled:
+
+![unnamed](images/10.png)
+
+**How to launch**
+
+Virtual machines start working in the background at startup. You can connect and disconnect to them, they will still continue to work. You can see the status of the virtual machine at the bottom of the application when you click on it:
+
+![unnamed](images/11.png)
+
+After the launch:
+
+![unnamed](images/12.png)
+
+Therefore, you can start a virtual machine by clicking on it and selecting **Start**. Then you can right-click and select **Connect** - you will connect to the VM. If you close the window, you can connect to the machine again by clicking **Connect**. To stop a virtual machine, you can click Shutdown in the Start menu of the virtual Windows or by clicking on the virtual machine and selecting **Stop**.
+
+When connecting to a VM, you will see the enhanced mode settings window. With this mode, the virtual machine can interact with your PC. Click **Show Options**:
+
+![unnamed](images/13.png)
+
+Select the **Local Resources tab**, expand the **Drives list**, and select which of your disks you want to connect to the VM. You can also select a USB flash drive if it is currently connected to a PC. Or you can choose the Drives that i plug in later option. The selected disks will appear in the explorer in the virtual machine. This way you can download the recorded effects directly to your computer/USB.
+
+![unnamed](images/14.png)
+
+![unnamed](images/15.png)
+
+> Before clicking the Connect button, you can return to the Display tab and select Save my settings for future connections to this virtual machine
+
+![unnamed](images/17.png)
+
+Now you can click the **Connect** button and start working in your virtual machine!
+
+**Possible problems**
+ 1. If you have a small amount of RAM (8 GB or less), reduce the value of RAM available to the virtual machine (set 3072 or 2048). Just keep in mind that this will lead to a decrease in the performance of the virtual machine.
+ 2. If you encounter an error at startup about a lack of RAM, close background applications and/or reduce the available amount of RAM for the virtual machine.
+ 3. Virtual machines are resource-demanding, so it is not recommended to run them together with other “heavy” programs (browsers, various editors, etc.). 
+
+If you have installed our virtual machine, then congratulations - you can already start creating effects! Proceed to the third step
+   
 </details>
 
 ---
