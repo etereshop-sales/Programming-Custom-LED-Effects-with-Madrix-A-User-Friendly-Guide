@@ -74,7 +74,7 @@ The main tool is **Madrix 3**, compatible with **Windows 10 or earlier**. It no 
 
 ---
 
-## < Step 2 – Installing the Necessary Software >
+##  Step 2 – Installing the Necessary Software 
 
 <details>
 <summary><strong>Drivers & Tools</strong></summary>
@@ -98,7 +98,7 @@ The main tool is **Madrix 3**, compatible with **Windows 10 or earlier**. It no 
 
 ---
 
-## < Step 3 – Importing and Creating LED Effects >
+##  Step 3 – Importing and Creating LED Effects 
 
 <details>
 <summary><strong>Open Your Project File</strong></summary>
@@ -135,7 +135,7 @@ The main tool is **Madrix 3**, compatible with **Windows 10 or earlier**. It no 
 
 ---
 
-## < Step 4 – Recording Your Effects >
+##  Step 4 – Recording Your Effects 
 
 <details>
 <summary><strong>Use Effects Recorder</strong></summary>
@@ -155,7 +155,7 @@ The main tool is **Madrix 3**, compatible with **Windows 10 or earlier**. It no 
 
 ---
 
-## < Step 5 – Copying Effects to the Controller’s SD Card >
+##  Step 5 – Copying Effects to the Controller’s SD Card 
 
 <details>
 <summary><strong>File Transfer Process</strong></summary>
@@ -174,10 +174,10 @@ The main tool is **Madrix 3**, compatible with **Windows 10 or earlier**. It no 
 
 ---
 
-## < Common Problems >
+##  Common Problems 
 
 <details>
-<summary>* My recorded effect flickers / freezes *</summary>
+<summary> My recorded effect flickers / freezes </summary>
 
 ✅ Reinstall **correct version** of WinPcap  
 🔁 See [Step 2](#step-2--installing-the-necessary-software)
@@ -209,7 +209,7 @@ The main tool is **Madrix 3**, compatible with **Windows 10 or earlier**. It no 
 
 ---
 
-## < Useful Links >
+##  Useful Links 
 
 * [Full Knowledge Base](https://etereshop.zohodesk.com/portal/en/kb/articles/programming-of-led-effects-via-madrix)  
 * [WinPcap Download](https://www.winpcap.org/install/default.htm)  
