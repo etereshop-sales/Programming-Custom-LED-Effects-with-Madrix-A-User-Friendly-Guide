@@ -3,14 +3,27 @@ Welcome to the exciting world of LED effect customization! This comprehensive gu
 
 ---
 
-##  Before You Begin 
+## Before You Begin
 
-Welcome to the exciting world of LED customization!
+Welcome to the exciting world of LED effect customization! This comprehensive guide is designed to walk you through every step of the process, ensuring that even if you’re new to computers, you’ll be able to follow along and successfully create stunning LED effects.
+The main way to create and record effects is to use Madrix software. This is commercial software that requires a subscription, but the free version is enough for you to work. But unfortunately, after version 3, Madrix software no longer allows you to record effects without a license, so you will need to install Madrix 3 if you want to use it for free.
 
-The main tool is **Madrix 3**, compatible with **Windows 10 or earlier**. It no longer supports free recording in later versions without a license.
 
-> ⚠️ MacOS or Windows 11+ users will need to install a virtual machine (VM) to run Madrix 3.  
-> ⚠️ If you have a Madrix license, ensure it supports enough **DMX universes** for your product.
+**If you have a license, then you will only need a program to record effects. However, make sure that your license gives you enough universes for your product.**
+
+Madrix 3 runs on **Windows 10** (or earlier), and it is not supported on Mac OS or later versions of Windows. But if you don’t have this operating system, then don’t worry - we have prepared instructions for you to install a virtual machine that will already have all the necessary software to get started!
+
+**Recommended PC specifications for running a virtual machine: - 8 GB of RAM - 32 GB of free disk space. If possible, put it on an SSD drive, because HDD performance is low for virtual machines (they will slow down).**
+
+**Conclusion:**
+
+* If you have Mac OS or Windows 11 and above, you will need a virtual machine to run Madrix 3. Proceed to the first step.
+
+* If you have a license to work in Madrix, then you can use any version, but pay attention to the number of universes available in your license. Install effects recorder from step 2 and proceed to step 3.
+
+* If you have an OS that supports Madrix 3, go to step 2.
+
+*If you already have all the necessary software and you just want to create effects, proceed to step 3.
 
 ---
 
