@@ -51,7 +51,7 @@ Download [VirtualBox](https://www.virtualbox.org/wiki/Downloads) from the offici
 > The user’s password is “etereshop”
 
 Steps:
-1. Download the Windows.ova file (this is an archived virtual machine image)
+1. Download the [Windows.ova](https://drive.google.com/file/d/1DTiehHmH0MpbS5xCsdHVhop0cavAAwFu/view) file (this is an archived virtual machine image)
 2. Launch VirtualBox, click Import
 3. Select the downloaded file Windows.ova
 4. Select the appropriate settings and wait for the import to complete
